@@ -2,8 +2,9 @@ package Shop.instrument;
 
 import Shop.ItemsForSale;
 import Shop.ProductType;
+import Shop.interfaces.IPlay;
 
-public class Instrument extends ItemsForSale {
+public class Instrument extends ItemsForSale implements IPlay {
 
     private InstrumentFamily instrumentFamily;
     private String brand;
@@ -27,4 +28,6 @@ public class Instrument extends ItemsForSale {
     public String getColor() {
         return color;
     }
+
+
 }
